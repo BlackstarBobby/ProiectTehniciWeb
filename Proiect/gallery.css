@@ -29,14 +29,18 @@ h3, p {
 .article-container {
     display: flex;
     padding: 0 10px 20px;
+    position: relative;
 }
 
 .article-container > h2 {
-position: absolute;
-    left:0;
-    right:0;
+    position: absolute;
+    left: 0;
+    right: 0;
     text-align: center;
+    padding-top: 80px;
+    top: -80px;
 }
+
 .article-container > div {
     margin-top: 90px;
 }
@@ -78,7 +82,7 @@ position: absolute;
     left: 0;
 }
 
-.left-pad::before{
+.left-pad::before {
     content: '<';
 }
 
@@ -91,7 +95,7 @@ position: absolute;
     right: 0;
 }
 
-.image-pad, .slider-reset{
+.image-pad, .slider-reset {
     position: absolute;
     left: 0;
     top: 0;
@@ -107,7 +111,7 @@ position: absolute;
     transition: all 200ms ease-in-out;
 }
 
-.image-pad > .left{
+.image-pad > .left {
     transform: translateX(-100%);
 }
 
@@ -118,5 +122,6 @@ position: absolute;
 .image-pad > .center {
     transform: translateX(0%);
 }
+
 /*************************************************************************************************/
 
