@@ -1,0 +1,57 @@
+p,table,th,td,ul,ol{
+    color: #ffffff;
+}
+
+footer{
+    position: relative;
+}
+
+h2{
+    line-height: 1em;
+    margin: 0;
+}
+
+
+section{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    position: relative;
+}
+
+.Title{
+    margin-top: 0;
+    float: left;
+    display: inline-block;
+    line-height: 0;
+    /*transform: translatex(+50%);*/
+    /*transform: translatey(+50%);*/
+    height: 100%;
+    left: 0;
+    width: 35%;
+    line-break: strict;
+    margin-left: 0;
+    padding-left: 15%;
+}
+
+.Table{
+    float: right ;
+    display: block;
+    width: 50%;
+}
+
+br{
+    margin: 5% 0;
+}
+
+#preturi p{
+    text-align: center;
+}
+
+#preturi table{
+    margin: 0 auto;
+}
+
+iframe{
+    height: 50%;
+    width: 100%;
+}

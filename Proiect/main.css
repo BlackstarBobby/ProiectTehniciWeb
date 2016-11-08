@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'Bebas Neue Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bebas Neue Bold'), url('fonts/BEBASNEUE BOLD.woff') format('woff');
+}
+
+body {
+    background-color: #1b1b1b;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul{
+    list-style: none ;
+    margin: 0;
+}
+
+header {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    max-height: 5%;
+    margin: 0;
+    padding: 1rem 5rem;
+    background-color: #252424;
+}
+
+#logo {
+
+    width: 10%;
+    margin-top: 0;
+    /*display: inline;*/
+    float: left;
+}
+
+nav {
+    /* position: relative;
+     display: inline;*/
+    width: 50%;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    float: right;
+    list-style: none;
+    /* background-color: #666;*/
+    height: 40px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+nav a:link, nav a:visited {
+    color: #fff;
+    padding: 10px 25px;
+}
+
+nav a:hover, nav a:active,
+nav .active a:link, nav .active a:visited {
+    background-color: #f46c0f;
+    text-shadow: none;
+}
+
+nav a {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+
+}
+
+nav > ul {
+    display: flex;
+    float: right;
+}
+nav > ul > * {
+    display: flex;
+}
+
+#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    /*background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;*/
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+#midContent {
+    position: absolute;
+    padding: 10% 25% 0 10%;
+    display: block;
+}
+
+h2 {
+    margin-left: 0;
+    color: #f46c0f;
+    font-size: 5em;
+    font-weight: 400;
+    font-family: Bebas Neue Bold, Helvetica, Arial, Verdana, sans-serif;
+    line-height: .05em;
+
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-font-smoothing: antialiased !important;
+    text-rendering: optimizelegibility !important;
+
+}
+
+#button a, #button a:visited {
+    color: #fff;
+    outline: 0;
+    transition: color 250ms ease-out 0s;
+}
+
+#button {
+    opacity: 1;
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 13px 0 25px;
+    height: 60px;
+    position: relative;
+    font-size: .75em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 2px solid #FFF;
+    color: #fff;
+}
+
+#button:hover {
+    color: #000;
+}
+
+#button > div {
+    width: 100%;
+    height: 100%;
+    transform: translateY(+50%);
+    line-height: 0;
+}
+
+#button::before {
+    background: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    content: ' ';
+    z-index: -1;
+    transition: all 250ms ease-in 0s;
+}
+
+#button:hover::before {
+    width: 100%;
+    transition: all 250ms ease-out 0s;
+}
+
+/*
+section{
+    
+    display: inline;
+    float: left;
+    width: 70%;
+}
+
+article{
+    background: #fff;
+    padding: 3% 5%;
+    margin-top: 2%;
+    	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+aside{
+    background: #fff;
+    display: inline;
+    float: right;
+    width: 21%;
+    padding: 2% 3%;
+    margin: 2% 0 2% 3%;
+    	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+*/
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    float: left;
+    background-color: #252424;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    width: 92%;
+    margin: 10px auto;
+    color: #fff;
+}
+
+#dropdownContent{
+    display: none;
+    position: absolute;
+    background-color: #252424;
+    top:100%;
+    right:0;
+    padding: 0;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-top: -2px;
+}
+
+#dropdown:hover #dropdownContent{
+    display: block;
+}
+
+#dropdownContent li{
+    position: relative;
+    text-align: center;
+    display: block;
+}
+
+#dropdownContent li a{
+    display: block;
+    position: relative;
+    text-align: left;
+}
+#dropdownContent li a:hover #dropdownContent>a{
+    background-color: #f46c0f;
+}

@@ -1,0 +1,164 @@
+body{
+    padding-top: 5%;
+}
+
+footer{
+    position: relative;
+}
+
+header{
+    display: block;
+    position: fixed;
+    top:0;
+    left:0;
+    max-height: 10%;
+    width: 90%;
+    z-index: 100;
+}
+
+#logo{
+    position: relative;
+}
+
+nav{
+    position: relative;}
+
+.left{
+    position: relative;
+    float: left;
+    width: 48%;
+    padding-top: 5%;
+    padding-left: 2%;
+}
+
+h2{
+    margin-top: 3%;
+    position: absolute;
+    padding-left: 10%;
+}
+
+h3{
+    margin-top: 5%;
+}
+
+h3,p{
+    color: #fff;
+}
+#CorporateArchitecture{
+    padding-left: 2%;
+}
+
+h2, .container{
+    margin-top: 5%;
+}
+.content ,h3{
+    padding-top: 5%;
+}
+/*****************************************************/
+.container{
+    float: right;
+    width: 50%;
+    height: 80vh;
+}
+
+#gallery,
+#gallery21
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+#left-pad, #right-pad,
+#left-pad21, #right-pad21
+
+{
+    top: 0;
+    color: #fff;
+    font-size: 72px;
+    height: 100%;
+    position: absolute;
+    line-height: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#left-pad::before, #right-pad::before,
+#left-pad21::before, #right-pad21::before
+{
+    line-height: 0;
+    transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
+}
+
+#left-pad,
+#left-pad21 {
+    left: 0;
+}
+
+#left-pad::before,
+#left-pad21::before{
+    content: '<';
+}
+
+#right-pad,
+#right-pad21
+{
+    right: 0;
+}
+
+#right-pad::before,
+#right-pad21::before
+{
+    content: '>';
+    right: 0;
+}
+
+#image-pad, .slider-reset,
+#image-pad21, .slider-reset21
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    /*background-image: url('https://www.newton.ac.uk/files/covers/968361.jpg');*/
+    background-size: cover;
+    background-position: center;
+}
+
+.slider-reset,
+.slider-reset21{
+    transition: all 200ms ease-in-out;
+}
+
+#image-pad > .left,
+#image-pad21 > .left
+{
+    transform: translateX(-100%);
+}
+
+#image-pad > .right,
+#image-pad21 > .right
+{
+    transform: translateX(+100%);
+}
+#image-pad > .center,
+#image-pad21 > .center
+{
+    transform: translateX(0%);
+}
+
+
+
+
+.slider-reset,
+.slider-reset21{
+
+}
+/*************************************************************************************************/
+
