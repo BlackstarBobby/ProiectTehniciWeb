@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gamma Design - About</title>
     <link rel="stylesheet" href="main.css" type="text/css">
     <link rel="stylesheet" href="about.css" type="text/css">
     <style>
         table, th, td {
-            border: 1px solid black;
+            border: 1px solid white;
         }
     </style>
 </head>
@@ -17,15 +18,15 @@
     <a href="index.html" id="logo"><img src="img/logoFinal.png" alt="logo"></a>
     <nav>
         <ul>
-            <li><a href="about.html">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
             <li id="dropdown"><a href="gallery.html">Gallery</a>
-                    <ul id="dropdownContent">
+                <ul id="dropdownContent">
                     <li><a href="gallery.html#InteriorDesign">Interior Design</a></li>
                     <li><a href="gallery.html#CorporateArchitecture">Corporate architecture</a></li>
-                    <li><a href="#">Product design</a></li>
+                    <li><a href="gallery.html#ProductDesign">Product design</a></li>
                 </ul>
             </li>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Contact</a></li>
         </ul>
     </nav>
     <div style="clear: both "></div>
@@ -83,6 +84,7 @@
 
 </section>
 <div style="clear: both"></div>
+<hr>
 <section>
     <div class="Title">
         <h2>Pasii contractului de amenajare interioara</h2>
@@ -110,6 +112,7 @@
     <div style="clear: both"></div>
 </section>
 
+<hr>
 
 <section>
     <div class="Title">
@@ -128,16 +131,18 @@
     </div>
     <div style="clear: both"></div>
 </section>
-
+<hr>
 <div>
 
-    <h2>Sediul nostru</h2>
-    <p>Adresă: Bulevardul Regina Elisabeta 4-12, București 030018</p>
-    <iframe src="http://www.maps.ie/create-google-map/map.php?width=600&amp;height=600&amp;hl=en&amp;q=Universitatea%20Bucuresti+(Location)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+    <div id="PreMap">
+        <h2>Sediul nostru</h2>
+        <p>Adresă: Bulevardul Regina Elisabeta 4-12, București 030018</p>
+    </div>
+    <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5697.777454893944!2d26.09729573274321!3d44.43544467910235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff473869f53f%3A0xee62eda4d786c152!2sUniversitatea+din+Bucure%C8%99ti!5e0!3m2!1sro!2sro!4v1478691289942" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
 </div>
 
 <footer>
-    <P>Copyright &copy; Bobby 2016 <a href="#" title="home">@AwesomeCompanyName</a></P>
+    <P>Copyright &copy; Bobby 2016 <a href="#" title="home" id="company">@AwesomeCompanyName</a></P>
 </footer>
 </body>
 

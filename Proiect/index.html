@@ -5,6 +5,7 @@
     <meta charset="UTF-8"/>
     <meta name="description" content="Interior Design">
     <meta name="keywords" content="Design, Amenajare, Interioare, Proiect">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="main.css">
 
     <title>Gamma Design</title>
@@ -14,15 +15,15 @@
     <a id="logo" href="index.html"><img src="img/logoFinal.png" alt="logo"></a>
     <nav>
         <ul>
-            <li><a href="about.html">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
             <li id="dropdown"><a href="gallery.html">Gallery</a>
                 <ul id="dropdownContent">
                     <li><a href="gallery.html#InteriorDesign">Interior Design</a></li>
                     <li><a href="gallery.html#CorporateArchitecture">Corporate architecture</a></li>
-                    <li><a href="#">Product design</a></li>
+                    <li><a href="gallery.html#ProductDesign">Product design</a></li>
                 </ul>
             </li>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Contact</a></li>
         </ul>
     </nav>
     <div style="clear: both;">
@@ -32,9 +33,7 @@
 
 
 <video id="bgvid" playsinline autoplay muted loop>
-    <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
     <source src="video/videoBg.mp4" type="video/mp4">
-    <!-- <source src="video/videoBackground.mp4" type="video/mp4"> -->
 </video>
 
 <section id="midContent">
@@ -102,10 +101,10 @@
     </aside>
 -->
 <div style="clear:both;">
-
 </div>
+<div style="width: 100%"></div>
 <footer>
-    <P>Copyright &copy; Bobby 2016 <a href="#" title="home">@AwesomeCompanyName</a></P>
+    <P>Copyright &copy; Bobby 2016 <a href="#" title="home" id="company">@AwesomeCompanyName</a></P>
 </footer>
 </body>
 

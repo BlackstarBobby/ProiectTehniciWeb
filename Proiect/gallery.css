@@ -1,6 +1,9 @@
 footer {
     position: relative;
 }
+header{
+    z-index: 2;
+}
 
 .left {
     position: relative;
@@ -45,6 +48,14 @@ h3, p {
     margin-top: 90px;
 }
 
+p{
+    font-size: 1em;
+    /*font-weight: 400;*/
+    letter-spacing: 0.2px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
 /*****************************************************/
 .container {
     float: right;
@@ -84,6 +95,7 @@ h3, p {
 
 .left-pad::before {
     content: '<';
+    opacity: .3;
 }
 
 .right-pad {
@@ -93,6 +105,7 @@ h3, p {
 .right-pad::before {
     content: '>';
     right: 0;
+    opacity: .3;
 }
 
 .image-pad, .slider-reset {
@@ -125,3 +138,34 @@ h3, p {
 
 /*************************************************************************************************/
 
+@media screen and (max-width: 650px) {
+    #firstArticle{
+        margin-top: 50px;
+    }
+
+    .left{
+        float: none;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .container{
+        float: none;
+        height: 100vh;
+        width: 100%;
+    }
+
+    #architectureFirst{
+        margin-top: 80px;
+    }
+
+    p{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .left{
+        margin-top: 80px;
+    }
+}

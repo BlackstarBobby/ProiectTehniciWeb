@@ -2,15 +2,29 @@ p,table,th,td,ul,ol{
     color: #ffffff;
 }
 
+table{
+    border-collapse: collapse;
+}
+td,th{
+    padding: 5px 10px 0 10px;
+    text-align: center;
+
+}
+
 footer{
     position: relative;
 }
 
 h2{
+    /*font-size: 1.5em;*/
     line-height: 1em;
     margin: 0;
+    padding-top: 5%;
 }
 
+#preturi h2{
+    padding-top: 10%;
+}
 
 section{
     margin-top: 10%;
@@ -20,23 +34,33 @@ section{
 
 .Title{
     margin-top: 0;
-    float: left;
+    /*float: left;*/
     display: inline-block;
     line-height: 0;
     /*transform: translatex(+50%);*/
     /*transform: translatey(+50%);*/
     height: 100%;
     left: 0;
-    width: 35%;
+    width: 40%;
     line-break: strict;
     margin-left: 0;
-    padding-left: 15%;
+
+    padding-left: 10%;
 }
 
 .Table{
     float: right ;
     display: block;
-    width: 50%;
+    width: 45%;
+    padding-right: 5%;
+}
+
+.Table >p{
+    text-align: center;
+}
+
+.Table > ul{
+    list-style: disc;
 }
 
 br{
@@ -49,9 +73,66 @@ br{
 
 #preturi table{
     margin: 0 auto;
+    margin-bottom: 10%;
 }
 
-iframe{
-    height: 50%;
+#PreMap{
     width: 100%;
+    /*transform: translatex(+50%);*/
+}
+
+#PreMap h2{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+#PreMap p{
+    padding-top: 150px;
+    text-align: center;
+}
+
+
+
+.map{
+    height: 40%;
+    position: relative;
+    padding-top: 50%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+
+.map iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+@media screen and (max-width: 650px){
+    #preturi{
+        margin-top: 20%;
+    }
+    .Title{
+        float: none;
+        padding-left: 0;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .Table{
+        width: 100%;
+        float: none;
+        padding-right: 0;
+        padding-left: auto;
+    }
+
+    .Table p{
+        text-align: center;
+    }
+
+    .Table ul{
+        list-style: disc;
+    }
 }
